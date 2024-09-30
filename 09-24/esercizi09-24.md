@@ -71,5 +71,3 @@ Scrivere un programma che prenda in ingresso un numero e stampi 0 se dispari o 1
 
 
 
-
-
