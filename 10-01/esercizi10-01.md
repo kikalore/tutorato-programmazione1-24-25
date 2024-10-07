@@ -67,17 +67,17 @@ fattoriale di:
 
 Scrivere un programma che implementi una calcolatrice per numeri interi, ossia che prenda in ingresso due numeri e un carattere ('+','-','*','/') e che calcoli poi il risultato dell'operazione.
 
-# 9.a Calcolatrice, la vendetta
+## 9.a Calcolatrice, la vendetta
 
 Riprendere il programma dell'esercizio 8. Una volta fatta la prima operazione, il programma continua a richiedere un nuovo operatore e un nuovo numero fintanto che non viene inserito il simbolo \$. Ogni volta che un nuovo numero e operatore vengono inseriti, il programma esegue l'operazione mettendo come primo numero il risultato ottenuto precedentemente e come secondo il nuovo numero. 
 
 Per esempio, il programma prende in ingresso due numeri all'inizio 3 e 4 e l'operatore *. Esegue l'operazione e ottiene 12. Se l'utente ora inserisce l'operatore \$, il programma termina, altrimenti se inserisce per esempio il simbolo / e successivamente il numero 2, verrà eseguita la divisione 12/2 e stampato il valore. 
 
-# 9.b Calcolatrice, il ritorno
+## 9.b Calcolatrice, il ritorno
 
 Considerare la possibilità che i valori inseriti non siano degli  interi. 
 
-# 10 Palindromi
+## 10 Palindromi
 
 Letto in input un numero tra 0 e 1000000 esclusi, dire se il numero è palindromo, ossia se il numero può essere letto da destra a sinistra e viceversa. Per esempio 2002 e 30403 sono palindomi, mentre 2012 o 40340 non lo sono. 
 
