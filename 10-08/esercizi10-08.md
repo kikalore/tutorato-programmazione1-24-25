@@ -148,27 +148,4 @@ Scrivere una funzione `void genericSwap (void*, void*, bool)` che esegua un cont
 decida se eseguire uno scambio tra puntatori di tipo `int` se `true` o di tipo `char` se `false`.
 
 
-## Ricorsione e iterazione
-
-### 10
-
-Scrivere una funzione ricorsiva che calcoli il fattoriale di un qualsiasi numero intero positivo.
-Riscrivere poi la sua versione iterativa (quale delle due è più efficiente?).
-
-*Bonus*:  
-Usare la libreria `chrono` (`#include <chrono>`) per misurare quanto dura l'esecuzione di ogni funzione:
-
-```C++
-chrono::time_point<chrono::steady_clock> start, end;
-double time_span; // durata in secondi
-
-start = chrono::steady_clock::now();
-// chiamata alla funzione
-end = chrono::steady_clock::now();
-time_span = chrono::duration_cast<chrono::duration<double>>(end - start).count();
-```
-
-Prendendo il tempo prima e dopo la funzione che si vuole misurare (`start` e `end`) è possibile sottrarli e ottenere la durata.
-
-
 
