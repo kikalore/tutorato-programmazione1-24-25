@@ -3,7 +3,7 @@
 
 ## Figure
 
-Mostrare a video le seguenti figure (sfruttare loop e condizioni):
+Stampare in output le seguenti figure. Usare due loop annidati per scorrere tutte le posizioni, e delle condizioni per stampare il carattere corretto.
 
 ### 1.1
 
