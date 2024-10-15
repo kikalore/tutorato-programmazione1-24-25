@@ -86,7 +86,7 @@ FoldLeft è un'operazione molto usata nella programmazione funzionale. Solitamen
 
 Ad esempio, se abbiamo un array di interi e vogliamo calcolare la somma di tutti gli elementi, possiamo usare la funzione `foldLeft` in questo modo (NB: alcuni step sono mancanti nella funzione seguente, è necessario aggiungerli per farla funzionare):
 
-```C++ {.numberLines}
+```c++
 int foldLeft(array, init) {
     val = get_valore_from_array(array);
     return foldLeft(array, init + val);
@@ -96,3 +96,6 @@ int foldLeft(array, init) {
 Scrivere una funzione `foldLeft` che prenda in input un array, un valore iniziale e l'indice corrente, e restituisca il massimo valore dell'array.
 
 Hint: è necessario aggiungere un caso base per la ricorsione.
+
+
+
