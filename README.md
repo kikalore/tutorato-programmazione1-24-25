@@ -10,3 +10,8 @@ I file markdown possono essere compilati in PDF con [pandoc](https://pandoc.org/
 pandoc --metadata-file pandoc_metadata.yaml <file_in>.md -o <file_out>.pdf
 ```
 
+da dentro la cartella:
+
+```sh
+pandoc --metadata-file ../pandoc_metadata.yaml <file_in>.md -o <file_out>.pdf
+```
