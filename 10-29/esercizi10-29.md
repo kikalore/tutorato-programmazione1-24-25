@@ -1,4 +1,4 @@
-# Esercizi 22-10-2024
+# Esercizi 29-10-2024
 
 _Nota_: per tutti i prossimi esercizi, cambiare i valori delle dimensioni degli array e delle matrici per provare diversi casi e verificare che il codice sia corretto.
 
