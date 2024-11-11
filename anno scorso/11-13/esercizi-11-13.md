@@ -1,6 +1,6 @@
 ---
 header-includes:
-    - '\usepackage[a4paper]{geometry}'
+  - '\usepackage[a4paper]{geometry}'
 documentclass: article
 fontsize: 12pt
 ---
@@ -34,11 +34,11 @@ Una volta inserita la matrice a schermo deve essere mostrato l'elemento dal valo
 ```shell
 Number of rows: 3
 Number of cols: 3
-Insert values: 
+Insert values:
 1 2 3 4 5 6 7 8 9
-1 2 3 
-4 5 6 
-7 8 9 
+1 2 3
+4 5 6
+7 8 9
 max row 1 => 3
 max row 2 => 6
 max row 3 => 9
@@ -46,9 +46,11 @@ max row 3 => 9
 
 # Strutture dati
 
+`USARE OVE POSSIBILE LE STRUCT`
+
 ## 2.1
 
-Scrivere un programma che gestisca la collisione in una dimensione tra due blocchi caratterizzati da due proprietà: 
+Scrivere un programma che gestisca la collisione in una dimensione tra due blocchi caratterizzati da due proprietà:
 
 - massa
 - velocità
@@ -58,38 +60,39 @@ La formula per calcolare la velocità finale è la seguente:
 $$
 V_1 = -\frac{m_2 \cdot v_2}{m_1}
 $$
+
 $$
 V_2 = -\frac{m_1 \cdot v_1}{m_2}
 $$
 
-Dove $m_1$ e $m_2$ sono le masse dei due blocchi, $v_1$ e $v_2$ le velocità iniziali  e $V_1$ e $V_2$ le velocità finali.
- 
+Dove $m_1$ e $m_2$ sono le masse dei due blocchi, $v_1$ e $v_2$ le velocità iniziali e $V_1$ e $V_2$ le velocità finali.
+
 Basta che il programma gestisca una sola collisione e stampi le velocità finali.
 
 ## 2.2
 
-Creare un programma per gestire una macchinetta del caffè a Povo, che contenga i campi 
-`caffe` e `credito` che indichino rispettivamente il numero di caffè rimanenti 
-e il credito dell'utente. 
+Creare un programma per gestire una macchinetta del caffè a Povo, che contenga i campi
+`caffe` e `credito` che indichino rispettivamente il numero di caffè rimanenti
+e il credito dell'utente.
 Prendere in input i valori iniziali.
 
-Implementare le funzioni 
+Implementare le funzioni
 
 - `void addCoin(CoffeeMachine * machine, int val)`{.cc} che aggiunge `val` centesimi al credito
-- `bool getCoffee(CoffeeMachine * machine)`{.cc} che restituisce `true` se è possibile 
-  erogare un caffè (ovvero se il credito è almeno 39 centesimi e ci sono caffè rimanenti), 
+- `bool getCoffee(CoffeeMachine * machine)`{.cc} che restituisce `true` se è possibile
+  erogare un caffè (ovvero se il credito è almeno 39 centesimi e ci sono caffè rimanenti),
   altrimenti restituisce `false` e non eroga il caffè.
 
 Creare poi un while loop che continui a chiedere all'utente se vuole inserire monete, se vuole prendere un caffè o se vuole sapere il saldo.
 
-Estendere poi il programma a gestire `N` macchinette del caffè con `N` preso in input all'inizio del programma. Aggiungere i dovuti controlli. 
+Estendere poi il programma a gestire `N` macchinette del caffè con `N` preso in input all'inizio del programma. Aggiungere i dovuti controlli.
 
 ## 2.3
 
 Un'agenzia del farmaco ha un grosso database per categorizzare i farmaci che usa. Il database memorizza le seguenti informazioni:
-id del farmaco, numero di molecole, numero di altri farmaci con cui interagisce, numero di test condotti, numero di reazioni avverse. 
+id del farmaco, numero di molecole, numero di altri farmaci con cui interagisce, numero di test condotti, numero di reazioni avverse.
 
-Il database può essere scaricato dal Google Drive (`farmaci_piccolo.txt`, `farmaci_grande.txt`). 
+Il database può essere scaricato dal Google Drive (`farmaci_piccolo.txt`, `farmaci_grande.txt`).
 
 `id numero_molecole numero_interazioni numero_test numero_reazioni`
 
@@ -103,34 +106,34 @@ Leggere il file, caricare i dati in memoria e successivamente dare le seguenti i
 
 ## 2.4 -- Facile
 
-Scrivere un programma per permettere la ricerca in un albero genealogico tramite il nome di una persona. 
+Scrivere un programma per permettere la ricerca in un albero genealogico tramite il nome di una persona.
 Definire una struct `Persona` con gli attributi `nome`,`madre`, e `padre`. Memorizzare le struct delle persone in un array `Persone`.
 Se una persona non ha madre o padre, lasciare il campo vuoto.
 
 Inizializzare un albero genealocico con dei valori randomici.
 
-Stampare a video qual è il genitore con più figli. Per fare questo potete aggiornare i campi della struttura, aggiungerne o toglierne. 
+Stampare a video qual è il genitore con più figli. Per fare questo potete aggiornare i campi della struttura, aggiungerne o toglierne.
 
-Cercare poi di trovare un algoritmo che permetta di scoprire anche chi è il nonno/a con più nipoti senza però modificare i campi della struttura ulteriormente. 
+Cercare poi di trovare un algoritmo che permetta di scoprire anche chi è il nonno/a con più nipoti senza però modificare i campi della struttura ulteriormente.
 
-Per un esempio più completo, potete scaricare il database `albero_genealogico.txt` dal Google Drive dove la prima riga indica il numero di Persone nel dataset e quelle seguenti sono nella forma `nome genitore1 genitore2`. 
+Per un esempio più completo, potete scaricare il database `albero_genealogico.txt` dal Google Drive dove la prima riga indica il numero di Persone nel dataset e quelle seguenti sono nella forma `nome genitore1 genitore2`.
 
 \newpage
 
 ## 2.4 -- Difficile
 
-Scrivere un programma per permettere la ricerca in un albero genealogico tramite il nome di una persona. 
+Scrivere un programma per permettere la ricerca in un albero genealogico tramite il nome di una persona.
 Definire una struct `Persona` con gli attributi `nome`,`madre`, `padre`, dove `madre` e `padre` sono puntatori a struct di tipo `Persona`.  
 Scrivere una funzione `cercaPersona (Persona**, const char*)`{.cc} che prenda in input un puntatore all'albero e nome e cerchi, se esiste, una persona con quel nome (usare una procedura ricorsiva).
 
-*Aiuto*:
+_Aiuto_:
 
 - inizializzare le persone che chiudono l'albero (es. i nonni) con `NULL`{.cc}, in modo da poter controllarne la presenza ed evitare seg. fault.
 - può essere utile usare `typedef`{.cc} per semplificare l'uso dei puntatori, ad esempio
 
 ```{.cc .numberLines}
 struct Persona {...};
-typedef Persona * PuntatorePersona;        // punta alla singola 
+typedef Persona * PuntatorePersona;        // punta alla singola
                                            // istanza di Persona
 typedef PuntatorePersona * AlberoPersona;  // punta all'intero
                                            // albero di Persona
@@ -140,15 +143,15 @@ in questo caso la funzione avrà una firma del tipo `cercaPersona (AlberoPersona
 
 ## 2.5
 
-Scrivere un programma che permetta la gestione di una serie di macchine tramite `LinkedList`, definita nel seguente modo: 
+Scrivere un programma che permetta la gestione di una serie di macchine tramite `LinkedList`, definita nel seguente modo:
 
 ```{.cc .numberLines}
 struct LinkedList {
  // attributi utili
  // (...)
  // puntatore all'item successivo nella lista
- LinkedList * next; 
-}; 
+ LinkedList * next;
+};
 ```
 
 ### 2.5.1
@@ -157,7 +160,7 @@ Scrivere una funzione che permetta di stampare tutti gli item all'interno della 
 
 ### 2.5.2
 
-Scrivere una funzione che ricerchi un determinato item all'interno della lista e lo rimuova. 
+Scrivere una funzione che ricerchi un determinato item all'interno della lista e lo rimuova.
 
 **N.B**: non è necessario de-allocare l'oggetto, basta manipolare il campo `next`
 
