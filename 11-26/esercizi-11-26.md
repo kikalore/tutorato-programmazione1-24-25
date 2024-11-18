@@ -1,13 +1,9 @@
----
-header-includes:
-    - '\usepackage[a4paper]{geometry}'
-documentclass: article
-fontsize: 10pt
----
 
-# Manipolazione di strutture dati
+# Esercizi 26-11-2024
 
-## 1.1
+## Manipolazione di strutture dati
+
+### 1.1
 
 \begin{tiny}
 Esercizio tratto da \emph{Programmazione Scientifica - Barone, Marinari, Organtini, Ricci-Tersenghi}
@@ -29,7 +25,7 @@ Scrivere una funzione che ridimensioni l'array `data` all'interno di `dataStruct
 void ResizeArray(dataStruct *orig, int size);
 ```
 
-## 1.2
+### 1.2
 
 Scrivere due funzioni per inserire e rimuovere un elemento dalla struttura. I prototipi delle funzioni sono:
 
@@ -43,11 +39,11 @@ Attenzione alla gestione dei valori `size` e `numData`!
 
 *Consiglio*: un modo efficiente per allocare nuova memoria è quello di raddoppiare `size` ogni qual volta `numData == size`{.cc}. In questo modo si è sicuri che il numero di operazioni per l'allocazione di nuova memoria cresca logaritmicamente con la lunghezza della struttura che è quindi un'operazione efficiente.
 
-## 2
+### 2
 
 Scrivere un programma che ordini gli item di una linked list usando l'algoritmo di sorting `BubbleSort`.
 
-## 3
+### 3
 
 Scrivere un programma che data una Linked list, permetta di spostare una sezione arbitraria di items in fondo alla lista. 
 
@@ -59,7 +55,7 @@ LinkedListNode* moveChunk(LinkedListNode* head, int startIndex, int lenOfChunk);
 
 \newpage
 
-## 4
+### 4
 
 \begin{tiny}
 Esercizio tratto da \emph{Programmazione Scientifica - Barone, Marinari, Organtini, Ricci-Tersenghi}
@@ -96,3 +92,4 @@ Dato un array di interi, la cui dimensione deve poter crescere dinamicamente, si
 
 - sfruttare l'implementazione della struttura all'esercizio 1
 - è molto utile ragionare graficamente con l'ausilio della rappresentazione ad albero.
+
