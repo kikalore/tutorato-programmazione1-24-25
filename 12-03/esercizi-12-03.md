@@ -1,13 +1,9 @@
----
-header-includes:
-    - '\usepackage[a4paper]{geometry}'
-documentclass: article
-fontsize: 12pt
----
 
-# Liste e code con priorità
+# Esercizi 03-12-2024
 
-## 1
+## Liste e code con priorità
+
+### 1
 
 Scrivere le implementazioni delle funzioni definite all'interno del file `PriorityQ.h` in un file `PriorityQ.cc`. Il file `PriorityQ.h` e il main del programma possono essere scaricati dalla cartella `priority` su Google Drive. La struttura dati da implementare è una sorta di coda a priorità dove ad ogni elemento è appunto associata una priorità.
 
@@ -22,7 +18,7 @@ Ciascuna coda deve essere implementata con una lista doppiamente linkata, quindi
 
 \newpage
 
-## 2
+### 2
 
 Scrivere la dichiarazione e la definizione di una funzione `unisciListe`, che prende in input due puntatori a due liste concatenate contenenti `float`{.cc}, e restituisce il primo nodo di una nuova lista concatenata, che contiene prima gli elementi della prima lista e poi gli elementi della seconda.
 
@@ -48,9 +44,9 @@ Le dimensioni delle liste in input sono generate casualmente e non è possibile 
 
 \newpage
 
-# Alberi
+## Alberi
 
-## 3
+### 3
 
 L'ingegner Fuffox ha sviluppato uno strano metodo per superare l'esame di Programmazione 1 senza dover studiare. Ovviamente, per imparare il metodo è necessario seguire un seminario tenuto nientemeno che da Fuffox stesso.
 
