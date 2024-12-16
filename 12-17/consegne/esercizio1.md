@@ -1,9 +1,3 @@
----
-header-includes:
-    - '\usepackage[a4paper]{geometry}'
-documentclass: article
-fontsize: 12pt
----
 
 # Esercizio 1
 
